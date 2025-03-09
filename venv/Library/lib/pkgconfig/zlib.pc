@@ -1,0 +1,13 @@
+prefix=G:/python/Python-for-Data-Analytics/venv/Library
+exec_prefix=G:/python/Python-for-Data-Analytics/venv/Library
+libdir=G:/python/Python-for-Data-Analytics/venv/Library/lib
+sharedlibdir=G:/python/Python-for-Data-Analytics/venv/Library/lib
+includedir=G:/python/Python-for-Data-Analytics/venv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
