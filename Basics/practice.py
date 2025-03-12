@@ -176,3 +176,26 @@ if(a==10 or b==12):
     print(True)
 else:
     print(False)
+
+## if, elif, & else Conditional Statements
+age=20
+if age>=18:
+    print("you are eligible for this 18+ content")
+elif age<18:
+    print("you are not allowed for this content")
+else:
+    print("Try Again...")
+
+
+##Nested condition
+##Leap year example
+year=int(input("enter a year: "))
+if year % 4 == 0:
+    if (year % 100==0) and (year % 400 == 0):
+        print(year,"is leap year")
+    elif (year%100==0) and (year%400!=0):
+        print(year,"is not leap year")
+    else:
+        print(year,"is leap year")
+else:
+    print(year,"is not leap year")
