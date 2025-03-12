@@ -87,3 +87,92 @@ age=input("What is the age of that person:")
 print("input thaken as ",type(age))
 age=int(age)
 print("the age is: ",age ,"it is after type conversion",type(age))
+
+## Arithmathic Operator
+a=11
+b=5
+add_result=(a+b)
+sub_result=(a-b)
+mul_result=(a*b)
+div_result=(a/b)
+mod_result=(a%b)
+floor_div_result=(a//b)
+exponent_result=(a**b)
+
+print("Add Result is: ",add_result)
+print("Sub Result is: ",sub_result)
+print("Mul Result is: ",mul_result)
+print("Div Result is: ",div_result)
+print("Mod Result is: ",mod_result)
+print("Floor  is: ",floor_div_result)
+print("Exponent Result is: ",exponent_result)
+
+## (==) Comparison Operator
+a=int(input("Enter first number: "))
+b=int(input("Enter second number: "))
+
+if(a==b):
+    print("both are equal")
+else:
+    print("The numbers are: ")
+    print("a = ",a,"b =",b)
+
+## (==)Comparison Operator
+name1="Istiak"
+name2="istiak"##case sensative
+name1==name2
+
+## (!=)Comparison Operator
+name1="Istiak"
+name2="istiak"##case sensative
+name1!=name2
+
+## (>) greater than Comparison Operator
+a=25
+b=23
+if a>b:
+    print(a,"is grater then",b)
+else:
+    print(b,"is grater then",a)
+
+## (<) Less than Comparison Operator
+a=21
+b=23
+if a<b:
+    print(a,"is less then",b)
+else:
+    print(b,"is less then",a)
+
+
+## (>=) greater than equal Comparison Operator
+a=21
+b=23
+if a>=b:
+    print(a,"is greater than or equal then",b)
+else:
+    print(b,"is greater than or equal then",a)
+
+## (>=) less than equal Comparison Operator
+a=21
+b=23
+if a<=b:
+    print(a,"is less than or equal then",b)
+else:
+    print(b,"is less than or equal then",a)
+
+
+## And operator
+a=10
+b=12
+if(a==10 and b==12):
+    print(True)
+else:
+    print(False)
+    
+## Or operator
+a=10
+b=12
+if(a==10 or b==12):
+    print(True)
+else:
+    print(False)
