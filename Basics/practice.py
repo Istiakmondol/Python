@@ -199,3 +199,54 @@ if year % 4 == 0:
         print(year,"is leap year")
 else:
     print(year,"is not leap year")
+
+
+## Loops
+## For Loop
+    ##iterating over a range
+    ##iterating over a string
+## While Loop
+
+## for loop
+for i in range(1,6):
+    print(i)
+print("Finish")
+
+## For Loop
+for i in range(10,1,-2):
+    print(i)
+print("Finish")
+
+## For Loop
+str="Istiak Mondol"
+for i in str:
+    print(i)
+
+## While Loop
+i=1
+while(i!=10):
+    print(i)
+    i=i+1
+print("Finished")
+
+##While Loop
+i=0
+while (i%2==0):
+    print(i,"is an Even Number")
+    i=i+1
+    if i%2==1:
+        if i==11:
+            break
+        else:
+            print(i,"is an odd Number")
+            i=i+1
+print("Finished")
+
+## Nested Loop
+str="Istiak Mondol"
+for i in range (2):
+    for j in str:
+        print(f"i: {i} and j: {j}")
+        if j=='l':
+            print("\n")
+        
