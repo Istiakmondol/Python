@@ -111,7 +111,16 @@ print(concate_tuple)
 ## Emmutable Nature of Tuples
 ## it means one a element assigned, it can't be changed
 ## the procedure of changing an element from tuple is (tuple-> list[make changes with element]-> Tuple) 
-## numbers[1]="name" -> this will give you error
+## numbers[1]="name" -> this will give you error (here number is a tuple)
+print(type(numbers))
+print(numbers)
+lst_cnv=list(numbers)
+print(type(lst_cnv))
+lst_cnv.insert(1,"Istiak")
+numbers=tuple(lst_cnv)
+print(type(numbers))
+print(numbers)
+
 
 ## Touple Method
 print(numbers.count(1)) ## it will count the appearance of that item in the touple
@@ -134,3 +143,19 @@ first,*middle,last=num
 print(first)
 print(middle)
 print(last)
+
+## Nasted tuples
+#list
+lst=[[1,2,3,4],[1,"hello","c"],[1.5,"hdcb",4,True]]
+print(lst[0][3])
+print(lst[2][:2:1])
+# Nasted tuples
+nested_tuples=((1,2,3),("a","b","c"),(True,False))
+print(nested_tuples[0][::-1])
+print(nested_tuples[1][::-1])
+
+##iterating over tuples through loop
+for i in nested_tuples:
+    for j in i:
+        print(j,end=" ")
+    print()
