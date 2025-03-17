@@ -7,21 +7,21 @@ boolean
 '''
 
 ## Advance Data Types
-'''
-List/Array ex. lst=["name", 1, 2, 3.4,True] (it can contain all kind of data types inside it. it behaves like array)
-Tuples ex. lst=("name", 1, 2, 3.4,True) (Almost same as List)
-Sets
-Dictionaries
-'''
 
-'''
+#List/Array ex. lst=["name", 1, 2, 3.4,True] (it can contain all kind of data types inside it. it behaves like array)
+#Tuples ex. tuple=("name", 1, 2, 3.4,True) (Almost same as List)
+#Sets ex. set={}"name", 1, 2, 3.4,True} (Set of unique items)
+#Dictionaries
+
+
+
 ## Booleans
 a=10
 b=12
 print(a==b)
 print(type(a==b))
-'''
-'''
+
+
 ## List
 lst=["Md.", "Istiak", "Mondol","DOB->",13,2,2001,"Height->",5.7,"Student->",True]
 print(lst[1])
@@ -97,7 +97,7 @@ for i in range(1,11):
     if i%2==0 :
         lst2.append(i)
 print(lst2)
-'''
+
 
 ## Tuples
 numbers=(1,1,2,3,4,5,6,7,8)
@@ -159,3 +159,112 @@ for i in nested_tuples:
     for j in i:
         print(j,end=" ")
     print()
+    
+
+## Set
+
+#create a set
+my_set={1,2,3,4,5,6,7,"istiak"}
+print(type(my_set))
+print(my_set)
+
+#create empty set
+my_empty_set=set()
+print(type(my_empty_set))
+print(my_empty_set)
+
+##basic operation of set
+empty_set=set([1,2,3,4,5])
+print(empty_set)
+
+#1 duplicate element of set
+empty_set=set([1,2,3,4,5,3,2,4])
+print(empty_set)
+
+#1 Adding element
+my_set.add(7)
+print(my_set)
+
+#Removing elements
+my_set.remove("istiak")
+print(my_set)
+
+#won't give error if the element is not present there
+my_set.discard(10)
+print(my_set)
+
+#Removing elements using pop method
+removed_element=my_set.pop()
+print(removed_element)
+print(my_set)
+
+#clear all the elements
+my_set.clear()
+print(my_set)
+
+### set membership test
+my_set={1,2,3,4,5}
+print(3 in my_set)
+print(5 in my_set)
+
+### Mathematical operation
+my_set={1,2,3,4,5,6}
+my_set2={3,4,5,6,7,8,9}
+
+#Union
+union_set=my_set.union(my_set2)
+print(union_set)
+
+#Intersection
+intersection_set=my_set.intersection(my_set2)
+print(intersection_set)
+
+#Intersection_Update
+intersection_update_set= my_set.intersection_update(my_set2)
+print(my_set)
+
+my_set={1,2,3,4,5}
+my_set2={3,4,5,6,7}
+
+#Difference
+Diffrence_set= my_set.difference(my_set2)
+print(Diffrence_set)
+
+#Difference_update
+Diffrence_set= my_set.difference_update(my_set2)
+print(my_set)
+
+my_set={1,2,3,4,5}
+my_set2={3,4,5,6,7}
+
+# Symmetric Difference
+Sym_Diffrence_set= my_set.symmetric_difference(my_set2)
+print(Sym_Diffrence_set)
+
+#Set Method
+my_set={1,2,3,4,5,6,7}
+my_set2={3,4,5,6,7}
+
+#is subset?
+subset_set=my_set2.issubset(my_set)
+if subset_set==True:
+    print("Yes")
+else:
+    print("No")
+
+#is superset?
+super_set=my_set.issuperset(my_set2)
+if super_set==True:
+    print("Yes Super set")
+else:
+    print("Not super set")
+
+##counting unique words is text
+text="we are learning set operation"
+word=text.split()
+print(type(word)) ## it is not in 'List' order
+
+unique_words=set(word) ##now it has converted to 'Set'
+print(unique_words)
+print(len(unique_words))
+
