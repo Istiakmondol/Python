@@ -268,3 +268,125 @@ unique_words=set(word) ##now it has converted to 'Set'
 print(unique_words)
 print(len(unique_words))
 
+###Dictionary
+### Create Dictionary
+empty_dic={}
+print(type(empty_dic))
+#
+empty_dic=dict()
+print(type(empty_dic))
+
+
+##3 Single keys is always used
+student={"Name": "Istiak", "Age":24, "grade":16}
+print(student)
+print(type(student))
+
+### Accessing dictionary Elements
+student={"Name": "Istiak", "Age":24, "Grade":'A'}
+print(f"Grade: {student['Grade']}")
+print(f"Age: {student['Age']}")
+
+# Accessing using method
+print(student.get('Age'))
+print(student.get('last_name', "Not Available")) 
+
+
+### Modifying Dictionary Elements
+  # Dictionary are Mutable, so you can add, update, and delete elements
+print(student)
+
+student["Age"]=26 ##Updated the value
+
+student["Address"]="Bangladesh" ##Added a new key & value
+
+del student["Grade"] ##Delete keys and value pair
+
+print(student)
+
+### Common Dectionary Methods
+keys=student.keys() # it will stoire all the keys of student dic
+print(keys)
+
+values=student.values() #it will store all the values of student dic
+print(values)
+
+items=student.items() #it will store all value pairs of student Dic
+print(items)
+
+### Shallow Copy Very very Important
+student_copy=student
+print(student)
+print(student_copy)
+
+student["Name"]="Istiak2"
+print(student)
+print(student_copy)
+
+student_copy1=student.copy() ##Shallow Copy
+student["Name"]="Istiak"
+print(student)
+print(student_copy1)
+
+### Iterating Over Dictionsry
+##We can use loops to iterate over dictionaries, Keys, values, or items
+
+#iterating over keys
+for i in student.keys():
+    print(f"Keys: {i}")
+
+#iterating over values
+for i in student.values():
+    print(f"Values: {i}")
+
+#iterating over keys
+print()
+for key,values in student.items():
+    print(f"(Keys: {key} values: {values})")
+
+
+### Nested Dictionaries
+students={
+    "student1":{"Name":"Istiak", "Age" : 24},
+    "student2":{"Name":"Mondol", "Age" : 25},
+    "student3":{"Name":"Nayem", "Age" : 26}
+}
+print(students["student1"]["Name"])
+print(students["student1"]["Age"])
+print()
+print(students["student3"]["Name"])
+print(students["student3"]["Age"])
+
+##iterating over nested dictionaries
+for student_id,student_info in students.items():
+    print(f"{student_id}: ")
+    for name,age in student_info.items():
+        print(name,":",age)
+
+
+
+### Dictionary Comprehension
+squares={x:x**2 for x in range(6)}
+print(squares)
+
+# Conditional Dictionary Comprehension
+squares={i:i**2 for i in range(11) if i%2==0}
+print(squares)
+
+
+#### use a dictionary to count the frequency of elements in list
+number=[1,2,2,3,3,3,4,4,4,4]
+freq={}
+for i in number:
+    if i in freq:
+        freq[i]+=1
+    else:
+        freq[i]=1
+print(freq)
+
+
+#### Merge two dictionaries
+dic1={"a":1, "b":2}
+dic2={"b":3,"c":4}
+merged_dic={**dic1,**dic2}
+print(merged_dic)
