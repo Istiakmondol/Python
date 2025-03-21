@@ -12,7 +12,7 @@ employees = [
 def emp_name (employees):
     print("Employee names are: ")
     for i in employees:
-        print({i[0]})
+        print(i[0])
 
 def high_salary_emp (employees):
     temp=0
