@@ -1,0 +1,11 @@
+Hello there...
+
+1) In "data_types.py" file, i have practiced advanced data types of python (List, Tuple, Set, & Dictionary). These codes are for my learning purpose. 
+
+2) In "practice.py" file, i have practiced basic python programming. i have coded Variables, operators, loops, conditions and so many things.
+
+3) "test.ipynb" file is just a ipynb format of "practice.py" file.
+
+4) In "Functions.ipynb" file, i have practiced the 'Function' topic of python programming.
+
+5) In "File_operation.py" file, i have practiced the 'File' topic of python programming. (Read, Write, Delete)
