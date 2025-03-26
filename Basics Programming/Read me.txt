@@ -1,6 +1,6 @@
 Hello there...
 
-1) In "data_types.py" file, i have practiced advanced data types of python (List, Tuple, Set, & Dictionary). These codes are for my learning purpose. 
+1) In "Advance_data_types.ipynb" file, i have practiced advanced data types of python (List, Tuple, Set, & Dictionary). These codes are for my learning purpose. 
 
 2) In "practice.py" file, i have practiced basic python programming. i have coded Variables, operators, loops, conditions and so many things.
 
