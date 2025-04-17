@@ -27,6 +27,6 @@ except Exception as main:
 else:
     print("Program successfully executed")
 finally:
-    print("Good Day")
+    print("Have a Good Day")
 
         
