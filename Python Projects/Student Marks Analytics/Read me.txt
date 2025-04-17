@@ -9,7 +9,6 @@ students = [
     ("Grace", 85, 90, 92),
 ]
 
-
 Tasks:
 
 List & Tuple:

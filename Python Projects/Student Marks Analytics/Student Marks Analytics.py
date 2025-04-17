@@ -18,7 +18,7 @@ def stuent_names (students):
 def highest_mark_student (students):
     marks=0
     for i in students:
-        total=i[1]+i[2]+i[3]
+        total=sum(i[1:])
         if marks<total:
             marks=total
             name=i[0]
@@ -43,9 +43,9 @@ def check_name (students):
 
 def dict_sname_value (students):
     dict={}
-    for name,m1,m2,m3 in students:
-        total=(m1+m2+m3)/3
-        dict[name]=total
+    for i in students:
+        total=sum(i[1:])
+        dict[i[0]]=total/3
     print("Average Score per Student: ")
     for i in dict.items():
         print(i)
@@ -53,7 +53,7 @@ def dict_sname_value (students):
 def high_avg_scr (students):
     high=0
     for i in students:
-        total=i[1]+i[2]+i[3]
+        total=sum(i[1:])
         marks=total/3
         if(high<marks):
             high=marks
@@ -62,9 +62,9 @@ def high_avg_scr (students):
 
 def bonus_one (students):
     dict1={}
-    for name,m1,m2,m3 in students:
-        total=(m1+m2+m3)/3
-        dict1[name]=total
+    for i in students:
+        total=sum(i[1:])
+        dict1[i[0]]=total/3
     sorted_avg = sorted(dict1.items(), key=lambda x: x[1],reverse=True)
     print("\nStudents sorted by Average Score (Highest to Lowest):")
     for name, avg in sorted_avg:
@@ -73,7 +73,7 @@ def bonus_one (students):
 def pass_fail (students):
     res={}
     for i in students:
-        total=i[1]+i[2]+i[3]
+        total=sum(i[1:])
         marks=total/3
         if(marks>=60):
             res[i[0]]="Pass"
