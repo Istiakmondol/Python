@@ -33,6 +33,7 @@ def unique_dept (employees):
 
 def find_dept (employees):
     dept_name=input("Enter the dept name you are looking: ")
+    dept_name=dept_name.title()
     for i in employees:
         if dept_name in i:
             print("Name Present in the dataset")
@@ -42,7 +43,7 @@ def find_dept (employees):
 
 def create_dic (employees):
     dic_of_emp={}
-    for name,dept,num in employees:
+    for name,dept,salary in employees:
         if dept not in dic_of_emp:
             dic_of_emp[dept]=[]
         dic_of_emp[dept].append(name)
