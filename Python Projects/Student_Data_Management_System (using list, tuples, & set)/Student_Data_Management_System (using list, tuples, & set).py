@@ -5,20 +5,20 @@ def add_student (student_list) : ## Function for adding students to the list
     student_id=input("Enter student Id: ")
     student_age=int(input("Enter student age: "))
     student_courses= input("Enter Courses (comma separated): ").split(",") ## Set to store unique courses
+    print(type(student_courses))
 
     student=(student_name, student_id, student_age, student_courses) ## Store as a tuple
     student_list.append(student) ## Add to list
-
     print(f"Student {student_name} added successfully\n")
 
 def view_student (student_list):
     if not student_list:
         print("There is no student in the system")
         return
-    
-    for i in student_list:
-        student_name, student_id, student_age, student_courses = i
-        print(f"Student Name: {student_name}\n Student ID: {student_id}\n Student Age: {student_age}\n and the courses are: {','.join(student_courses)}\n")
+    else:
+        for i in student_list:
+            student_name, student_id, student_age, student_courses = i
+            print(f"Student Name: {student_name}\n Student ID: {student_id}\n Student Age: {student_age}\n and the courses are: {','.join(student_courses)}\n")
 
 def searceh (student_list):
     id=input("Enter the student id: ")
