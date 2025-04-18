@@ -1,0 +1,33 @@
+1. Add a Book
+-Prompt the user to input all details.
+-Create a dictionary using those inputs.
+-Append it to the library list.
+
+2. View All Books
+-Loop through the library list.
+-Print each book’s details in a formatted way.
+
+3. Search for a Book
+-Ask the user to enter a search keyword (title or author).
+-Loop through the list and compare the keyword with book titles/authors (case-insensitive).
+-Show matching results.
+
+4. Update Book Details
+-Ask for the book title to update.
+-Find it in the list.
+-Ask which fields to update and take new input.
+-Update the dictionary.
+
+5. Delete a Book
+-Ask for the book title to delete.
+-Remove it from the list.
+
+6. Save to File
+-Use open() in write mode.
+-Convert each book dictionary to a string (JSON format is optional).
+-Write it to the file line by line.
+
+7. Load from File
+-When the program starts, open the file in read mode.
+-Read each line and convert it back to a dictionary.
+-Store all books into the library list.
