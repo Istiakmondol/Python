@@ -1,83 +1,100 @@
 library=[]
 def add_book():
-    book={}
-    title=input("Enter Book Name: ")
-    book["title"]=title.title()
-    print()
-    author=input("Enter Author Name: ")
-    book["author"]=author
-    print()
-    genre=input("Enter Book Genre: ")
-    book["genre"]=genre
-    print()
-    year=int(input("Enter the Publication year: "))
-    book["year"]=year
-    print()
-    rating=float(input("Enter Book Rating: "))
-    book["rating"]=rating
-    print()
-    library.append(book)
+    try:
+        book={}
+        title=input("Enter Book Name: ")
+        book["title"]=title.title()
+        print()
+        author=input("Enter Author Name: ")
+        book["author"]=author
+        print()
+        genre=input("Enter Book Genre: ")
+        book["genre"]=genre
+        print()
+        year=int(input("Enter the Publication year: "))
+        book["year"]=year
+        print()
+        rating=float(input("Enter Book Rating: "))
+        book["rating"]=rating
+        print()
+        library.append(book)
+    except Exception as main:
+        print(main)
 
-def View_all_books(library):
-    for book in library:
-        print(book.items()+'\n')
+def View_all_books():
+    try:
+        for book in library:
+            print(book.items())
+    except Exception as main:
+        print(main)
 
-def Search(library):
-    src=input("Enter the title of the book you are looking: ").title()
-    for book in library:
-        if src in book["title"]:
-            for key,value in book.items():
-                print(f"{key}: {value}\n")
-            break
+def Search():
+    try:
+        src=input("Enter the title of the book you are looking: ").title()
+        for book in library:
+            if src in book["title"]:
+                print("Book Found")
+                for key,value in book.items():
+                    print(f"{key}: {value}\n")
+                break
+    except Exception as main:
+        print(main)
 
-def update(library):
-    src=input("Enter the title of the book you are looking: ").title()
-    for book in library:
-        if src in book["title"]:
-            print("Book Found")
-            while(True):
-                choice=int(input("Which field do you want to update: 1)Title 2)Author 3)Genre 4)Year 5)Rating 6)EXIT\n"))
-                if choice==1:               
-                    book["title"]=input("Enter Book Name: ").title()
-                elif choice==2:
-                    book["author"]=input("Enter Author Name: ")
-                elif choice==3:
-                    book["genre"]=input("Enter Book Genre: ")
-                elif choice==4:
-                    book["year"]=int(input("Enter the Publication year: "))
-                elif choice==5:
-                    book["rating"]=float(input("Enter Book Rating: "))
-                elif choice==6:
-                    break
-            print("Sccessfully Updated")
+def update():
+    try:
+        src=input("Enter the title of the book you are looking: ").title()
+        for book in library:
+            if src in book["title"]:
+                print("Book Found")
+                while(True):
+                    choice=int(input("Which field do you want to update: 1)Title 2)Author 3)Genre 4)Year 5)Rating 6)EXIT\n"))
+                    if choice==1:               
+                        book["title"]=input("Enter Book Name: ").title()
+                    elif choice==2:
+                        book["author"]=input("Enter Author Name: ")
+                    elif choice==3:
+                        book["genre"]=input("Enter Book Genre: ")
+                    elif choice==4:
+                        book["year"]=int(input("Enter the Publication year: "))
+                    elif choice==5:
+                        book["rating"]=float(input("Enter Book Rating: "))
+                    elif choice==6:
+                        break
+                print("Sccessfully Updated")
+    except Exception as main:
+        print(main)
 
-def delete(library):
-    src=input("Enter the book title you want to delete: ")
-    for book in library:
-        if src in book["title"]:
-            library.remove(book)
-    print("Sccessfully Deleted")          
+def delete():
+    try:
+        src=input("Enter the book title you want to delete: ")
+        for book in library:
+            if src in book["title"]:
+                library.remove(book)
+        print("Sccessfully Deleted") 
+    except Exception as main:
+        print(main)         
 
-def Save(library):
-    with open("Library.txt", mode='a') as file:
-        for i,book in enumerate(library, start=1):
-            string=str(book)
-            file.write(string.strip()+'\n')
+def Save():
+    try:
+        with open("Library.txt", mode='w') as file:
+            for book in library:
+                content=str(book)
+                file.write(content+'\n')
             print("Saved successfully to Library.txt!")
             library.clear()
+    except Exception as main:
+        print(main)
 
-def load(library):
-    library=[]
+def load():
     try:
         with open("Library.txt", mode='r') as file:
-            lines=file.readlines()
-            for line in lines:
-                book=eval(line.strip())
+            content=file.readlines()
+            for lines in content:
+                book=eval(lines.strip())
                 library.append(book)
             print(" Library loaded successfully!")
-    except FileNotFoundError as fnf:
-        print(fnf)
-    return library
+    except Exception as main:
+        print(main)
 
 def main():
     print("Personal Library Management")
@@ -96,17 +113,17 @@ def main():
         if choice==1:
             add_book()
         elif choice==2:
-            View_all_books(library)
+            View_all_books()
         elif choice==3:
-            Search(library)
+            Search()
         elif choice==4:
-            update(library)
+            update()
         elif choice==5:
-            delete(library)
+            delete()
         elif choice==6:
-            Save(library)
+            Save()
         elif choice==7:
-            load(library)
+            load()
         elif choice==8:
             break
         else:
