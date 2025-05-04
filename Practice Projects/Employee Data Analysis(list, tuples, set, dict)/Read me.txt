@@ -1,0 +1,25 @@
+employees = [
+    ("John", "HR", 50000),
+    ("Alice", "Tech", 75000),
+    ("Bob", "Tech", 62000),
+    ("Daisy", "HR", 52000),
+    ("Charlie", "Sales", 47000),
+    ("Eve", "Tech", 88000),
+    ("Frank", "Sales", 45000),
+    ("Grace", "Tech", 61000),
+]
+
+
+Tasks to Practice (Use List, Tuple, Set, Dictionary):
+
+List & Tuple:
+1. Print the list of all employee names.
+2. Find the employee with the highest salary and display their details.
+
+Set:
+1. Get a set of all unique departments.
+2. Check if the "Finance" department exists in the dataset.
+
+Dictionary:
+1. Create a dictionary where the key is the department name and the value is a list of employee names in that department.
+2. Calculate and print the average salary for each department.

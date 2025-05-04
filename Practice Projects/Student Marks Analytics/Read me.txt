@@ -1,0 +1,28 @@
+students = [
+    ("John", 78, 85, 90),
+    ("Alice", 92, 88, 79),
+    ("Bob", 65, 70, 60),
+    ("Daisy", 80, 75, 85),
+    ("Charlie", 95, 100, 98),
+    ("Eve", 58, 60, 55),
+    ("Frank", 72, 68, 80),
+    ("Grace", 85, 90, 92),
+]
+
+Tasks:
+
+List & Tuple:
+1. Print all student names.
+2. Find the student with the highest total marks.
+
+Set:
+1. Create a set of students who scored above 90 in any subject (top scorers).
+2. Check if a student named 'Michael' is in the dataset.
+
+Dictionary:
+1. Create a dictionary where the key is the student name and the value is their average score.
+2. Print the student(s) with the highest average score.
+
+Bonus Challenge (Optional):
+1. Sort and print students by their average score (highest to lowest).
+2. Categorize students as "Pass" or "Fail" (Assume pass if average >= 60).

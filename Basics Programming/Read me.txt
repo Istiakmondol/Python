@@ -1,0 +1,13 @@
+Hello there...
+
+1) In "Advance_data_types.ipynb" file, i have practiced advanced data types of python (List, Tuple, Set, & Dictionary). These codes are for my learning purpose. 
+
+2) In "basic.ipynb" file i have practiced basic python programming. i have coded Variables, operators, loops, conditions and so many things.
+
+3) In "Functions.ipynb" file, i have practiced the 'Function' topic of python programming.
+
+4) In "File_operation.py" file, i have practiced the 'File' topic as well as file path operation (Os) of python programming. (Read, Write, Append) 
+
+5) In "import_modules&packages.ipynb" file, i have covered about the most common python libraries and their uses and practiced how to call them.
+
+6) In 'Exception.ipynb' file i have practiced the 'Exception' handling topic, where i saw (try-except, try-except-else, try-except-else-finally block).
