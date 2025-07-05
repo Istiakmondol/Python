@@ -1,0 +1,7 @@
+Student Data Management System
+
+1. Add new student records (name, age, courses, student ID).
+2. View all students.
+3. Search for a student by ID.
+4. Remove a student.
+5. Display unique courses.
