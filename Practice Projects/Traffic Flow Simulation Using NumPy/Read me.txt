@@ -1,0 +1,24 @@
+Step 1: Create the Environment
+	Simulate a 4-lane intersection (North, South, East, West).
+	Each lane has a queue (initially filled with 0–20 cars randomly).
+	Represent the traffic state using a NumPy array, e.g.,
+
+Step 2: Simulate Light Timing
+	Green light allows 1 car to pass every second.
+	Red light allows no cars to pass.
+	Simulate a full cycle: NS green for X seconds, then EW green for Y seconds.
+	Subtract cars from the lanes depending on green/red duration.
+	Add random new cars (0–5) to each lane every cycle.
+
+Step 3: Run the Simulation
+	Run for 20–50 cycles.
+	For each cycle, update the car counts.
+	Track metrics:
+		Average waiting time.
+		Total cars passed.
+		Congestion (queue length).
+
+Step 4: Optimization
+	Try different combinations of green light duration (X and Y).
+	Find the combination that minimizes average queue length or maximizes flow.
+	Use NumPy to iterate over multiple combinations and track best results.
