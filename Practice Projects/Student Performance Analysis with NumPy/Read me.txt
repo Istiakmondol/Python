@@ -1,0 +1,68 @@
+This project helps you understand how to work with multi-dimensional arrays in NumPy and perform statistical analysis like averages, max/min values, and standard deviation.
+
+🔶 Step 1: Importing the Library
+What you're doing: You’ll need to import NumPy — it's the core library for numerical data in Python.
+
+Why: All operations like creating arrays, finding averages, or identifying top scores will use NumPy functions.
+
+🔶 Step 2: Generating Random Marks for Students
+What you're doing:
+You create a 2D array that stores marks for a number of students across different subjects.
+
+Example:
+Rows = Students
+Columns = Subjects
+So a 50×5 array means: 50 students
+5 subjects (e.g., Math, Physics, Chemistry, Biology, English)
+
+Why:
+You need some data to analyze. Rather than manually inputting 50 rows, you simulate realistic scores using random integers between a reasonable range (like 40–100).
+
+🔶 Step 3: Performing Statistical Analysis
+Now that you have the marks, let’s analyze them using NumPy functions.
+
+🟠 3.1 Average Marks per Student
+
+What: Calculate the average marks for each student.
+
+How: Use mean function across each row.
+
+Why: To find how each student performed overall.
+
+🟠 3.2 Average Marks per Subject
+
+What: Find the average mark for each subject.
+
+How: Use mean across each column.
+
+Why: To see which subject was easiest or hardest.
+
+🟠 3.3 Maximum and Minimum Marks per Subject
+
+What: Identify the highest and lowest marks in each subject.
+
+How: Use max and min along each column.
+
+Why: To detect subject toppers and weakest performances.
+
+🟠 3.4 Standard Deviation for Each Subject
+
+What: Measure how spread out the marks are in each subject.
+
+How: Use std function.
+
+Why: To know if students are performing consistently in a subject or not.
+
+🔶 Step 4: Identify Top and Bottom Students
+
+What you're doing:
+Find the student who has the highest overall average.
+Find the student with the lowest overall average.
+
+Why: This helps recognize who is the topper and who needs improvement.
+
+🔶 Step 5: Identify Toppers per Subject
+
+What you're doing: For each subject, find the student who got the highest score.
+
+Why: This allows you to see which student excels in which subject.

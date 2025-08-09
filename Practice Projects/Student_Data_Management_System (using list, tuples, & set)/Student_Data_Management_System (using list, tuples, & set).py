@@ -29,8 +29,8 @@ def searceh (student_list):
             print()
             return
     else:
-            print("No student fount (*_*)")
-            return
+        print("No student fount (*_*)")
+        return
 
 def remove (student_list):
     id=input("Enter the student id you want to remove: ")

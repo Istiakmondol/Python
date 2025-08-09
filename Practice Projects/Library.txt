@@ -1,3 +1,0 @@
-{'title': 'Kfjd', 'author': 'jhvbfd', 'genre': 'b gsh', 'year': 2001, 'rating': 5.5}
-{'title': 'Rjhev', 'author': 'rgvyf', 'genre': 'vuwfcbj', 'year': 2002, 'rating': 5.6}
-{'title': 'Fyugbrhdksj', 'author': 'rgrsd', 'genre': 'gvsd', 'year': 2003, 'rating': 5.7}

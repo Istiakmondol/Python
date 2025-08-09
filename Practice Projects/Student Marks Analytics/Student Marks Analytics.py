@@ -12,8 +12,7 @@ students = [
 def stuent_names (students):
     student_list=[]
     for i in students:
-        student_list.append(i[0])
-    print(f"Student Names: {student_list}")
+        print(i[0])
 
 def highest_mark_student (students):
     marks=0

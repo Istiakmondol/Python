@@ -1,0 +1,18 @@
+Add Student Record
+	Ask for name and marks in three subjects. (Name,Math,Science,English)
+	Save it to students.txt.
+
+View All Records
+	Read the file and print each student’s record.
+
+Search Student by Name
+	Ask for a name.
+	Find and display that record.
+
+Delete Student Record
+	Ask for a name.
+	Remove that line from the file.
+
+Update Marks
+	Ask for student name.
+	Update marks for any subject.
